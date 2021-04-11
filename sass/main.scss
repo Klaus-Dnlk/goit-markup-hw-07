@@ -1,0 +1,95 @@
+@import './utils/variables';
+@import './components/logo';
+@import './components/header';
+@import './components/hero';
+@import './components/features';
+@import './components/our-works';
+@import './components/our-team';
+@import './components/clients';
+@import './components/footer';
+@import './components/modal';
+@import './components/portfolio';
+
+// :root {
+//   /* colors */
+//   --accent-color: #2196f3;
+//   --title-text-color: #212121;
+//   --main-text-color: #757575;
+//   --main-bg-color: #ffffff;
+//   --footer-bg-color: #2f303a;
+//   --btn-bg-color: #f5f4fa;
+//   --hero-bg-color: #2f303a;
+//   --frame-border-color: #eeeeee;
+//   --main-icon-color: #afb1b8;
+
+//   /* fonts */
+//   --main-font-family: Roboto;
+//   --main-font-size: 14px;
+
+//   /* animation */
+//   --dur: 250ms;
+//   --timefunc: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Визуально спрятанная section-title и portfolio */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* ultilities */
+.list {
+  list-style: none;
+  //   margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: $mainTextColor;
+  text-decoration: none;
+}
+
+/* body */
+
+body {
+  margin: 0;
+  color: $mainTextColor;
+  background-color: $mainBgColor;
+
+  font-family: $mainFontFamily;
+  font-size: $mainFontSize;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
