@@ -61,9 +61,7 @@ img {
   text-decoration: none;
 }
 
-.link--active {
-  color: var(--accent-color);
-}
+
 
 .container {
   width: 1200px;
@@ -143,6 +141,10 @@ body {
   margin-right: 50px;
 }
 
+.page-nav__current {
+  color: var(--accent-color);
+}
+
 .page-nav__link {
   display: inline-flex;
   align-items: center;
@@ -165,7 +167,7 @@ body {
 }
 
 /* синяя подсветка текущец страницы */
-.link--active::after {
+.page-nav__current::after {
   display: inline-block;
   position: absolute;
   content: '';
