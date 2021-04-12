@@ -1,12 +1,7 @@
 /* our team */
 .team__container {
-  // width: 1200px;
-  // margin-left: auto;
-  // margin-right: auto;
-  margin-top: 94px;
-  padding: 0 15px;
+  @include container;
   padding-top: 94px;
-  // padding-bottom: 94px;
 }
 
 .team__section {
@@ -83,12 +78,6 @@
   }
 }
 
-// .socials__item:hover {
-//   background-color: $accentColor;
-//   border-radius: 50%;
-
-// }
-
 .socials__link {
   display: inline-flex;
   margin: 0;
@@ -106,7 +95,3 @@
     fill: $mainBgColor;
   }
 }
-
-// .socials__icon:hover {
-//   fill: $mainBgColor;
-// }

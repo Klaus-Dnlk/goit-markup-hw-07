@@ -109,17 +109,6 @@
   border-radius: 4px;
 
   transition: border-color $dur $timeFunc;
-}
-
-.modal__icon {
-  position: absolute;
-  left: 12px;
-  bottom: 10px;
-  fill: $titleTextColor;
-  /* z-index: 1; */
-
-  width: 18px;
-  height: 18px;
 
   &:focus {
     outline: none;
@@ -130,16 +119,15 @@
   }
 }
 
-// оставляю в комментах страховвку
+.modal__icon {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  fill: $titleTextColor;
 
-// .modal__comment:focus {
-//   outline: none;
-//   border-color: $accentColor;
-// }
-
-// .modal__input:focus + .modal__icon {
-//   fill: $accentColor;
-// }
+  width: 18px;
+  height: 18px;
+}
 
 .modal__comment {
   resize: none;
@@ -205,21 +193,15 @@
 }
 
 .modal-check__button {
+  @include button;
+
   display: block;
+
   margin-top: 30px;
-  width: 200px;
-  height: 50px;
   margin-right: auto;
   margin-left: auto;
-
-  background-color: $accentColor;
-  color: $mainBgColor;
 
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-color: $accentColor;
-  border-radius: 4px;
 }

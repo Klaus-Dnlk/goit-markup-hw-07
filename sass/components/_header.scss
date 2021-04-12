@@ -6,25 +6,18 @@
 }
 
 .head-section__containter {
-  display: flex;
-  align-items: center;
-  // width: 1200px;
-  height: 80px;
+  @include container(0);
+  @include flex;
 
-  // margin-left: auto;
-  // margin-right: auto;
-  margin-top: 0;
-  // padding: 0 15px;
+  height: 80px;
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
+  @include flex;
 }
 
 .page-nav {
-  display: flex;
-  align-items: center;
+  @include flex;
 }
 
 .contacts {
@@ -42,8 +35,7 @@
 }
 
 .page-nav__link {
-  display: inline-flex;
-  align-items: center;
+  @include flex(inline-flex);
 
   height: 100%;
   padding-top: 21px;
@@ -79,8 +71,7 @@
 }
 
 .contacts__link {
-  display: inline-flex;
-  align-items: center;
+  @include flex(inline-flex);
   padding-top: 21px;
   padding-bottom: 21px;
 
@@ -100,15 +91,7 @@
 }
 
 .contacts__icon {
-  display: inline-flex;
-  align-items: center;
+  @include flex(inline-flex);
   margin-right: 10px;
   fill: currentColor;
 }
-
-// .contacts__link:hover,
-// .contacts__link:focus {
-//   color: $accentColor;
-
-//   transition: $dur $timeFunc;
-// }

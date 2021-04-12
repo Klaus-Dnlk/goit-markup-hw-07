@@ -1,6 +1,6 @@
 /* permanent clients */
 .clients__container {
-  margin-top: 94px;
+  @include container;
 }
 .clients__list {
   display: flex;
@@ -32,15 +32,6 @@
   }
 }
 
-// .clients__item:hover,
-// .clients__item:focus {
-//   border-color: $accentColor;
-// }
-
-// .clients__item:not(:last-child) {
-//   margin-right: 30px;
-// }
-
 .clients__icon {
   display: block;
   width: 170px;
@@ -54,8 +45,3 @@
     fill: $accentColor;
   }
 }
-
-// .clients__icon:hover,
-// .clients__icon:focus {
-//   fill: $accentColor;
-// }
