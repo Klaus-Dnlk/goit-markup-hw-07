@@ -1,10 +1,6 @@
 /* permanent clients */
 .clients__container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 94px;
-  padding: 0 15px;
 }
 .clients__list {
   display: flex;
@@ -25,16 +21,25 @@
   border-radius: 4px;
 
   transition: $dur $timeFunc;
+
+  &:hover,
+  &:focus {
+    border-color: $accentColor;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.clients__item:hover,
-.clients__item:focus {
-  border-color: $accentColor;
-}
+// .clients__item:hover,
+// .clients__item:focus {
+//   border-color: $accentColor;
+// }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .clients__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .clients__icon {
   display: block;
@@ -43,9 +48,14 @@
   fill: $mainIconColor;
 
   transition: $dur $timeFunc;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
 }
 
-.clients__icon:hover,
-.clients__icon:focus {
-  fill: $accentColor;
-}
+// .clients__icon:hover,
+// .clients__icon:focus {
+//   fill: $accentColor;
+// }

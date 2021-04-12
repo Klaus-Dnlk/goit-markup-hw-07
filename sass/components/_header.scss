@@ -8,13 +8,13 @@
 .head-section__containter {
   display: flex;
   align-items: center;
-  width: 1200px;
+  // width: 1200px;
   height: 80px;
 
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   margin-top: 0;
-  padding: 0 15px;
+  // padding: 0 15px;
 }
 
 .main-nav {
@@ -90,6 +90,13 @@
   font-size: $mainFontSize;
   line-height: 1.1;
   letter-spacing: 0.02em;
+
+  transform: $dur $timeFunc;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .contacts__icon {
@@ -99,9 +106,9 @@
   fill: currentColor;
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: $accentColor;
+// .contacts__link:hover,
+// .contacts__link:focus {
+//   color: $accentColor;
 
-  transition: $dur $timeFunc;
-}
+//   transition: $dur $timeFunc;
+// }

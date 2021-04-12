@@ -120,17 +120,27 @@
 
   width: 18px;
   height: 18px;
+
+  &:focus {
+    outline: none;
+    border-color: $accentColor;
+  }
+  &:focus + .modal__icon {
+    fill: $accentColor;
+  }
 }
 
-.modal__input:focus,
-.modal__comment:focus {
-  outline: none;
-  border-color: $accentColor;
-}
+// оставляю в комментах страховвку
 
-.modal__input:focus + .modal__icon {
-  fill: $accentColor;
-}
+// .modal__comment:focus {
+//   outline: none;
+//   border-color: $accentColor;
+// }
+
+// .modal__input:focus + .modal__icon {
+//   fill: $accentColor;
+// }
+
 .modal__comment {
   resize: none;
   height: 120px;
@@ -138,6 +148,11 @@
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    border-color: $accentColor;
+  }
 }
 
 .modal__check {

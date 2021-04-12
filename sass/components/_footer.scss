@@ -6,9 +6,9 @@
 
 .footer__flex {
   display: flex;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  // width: 1200px;
+  // margin-left: auto;
+  // margin-right: auto;
   margin-top: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -44,12 +44,17 @@
   letter-spacing: 0.03em;
 
   transition: $dur $timeFunc;
+
+  &:hover,
+  &:focus {
+    color: $mainBgColor;
+  }
 }
 
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
-  color: $mainBgColor;
-}
+// .footer-contacts__link:hover,
+// .footer-contacts__link:focus {
+//   color: $mainBgColor;
+// }
 
 .social__title {
   margin-bottom: 20px;
